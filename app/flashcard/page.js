@@ -48,7 +48,7 @@ export default function Flashcard() {
                         <Card>
                             <CardActionArea
                                 onClick={() => {
-                                    handleCardClick(id)
+                                    handleCardClick(index)
                                 }}
                             >
                                 <CardContent>
@@ -60,6 +60,7 @@ export default function Flashcard() {
                                             position: 'relative',
                                             width: '100%',
                                             height: '200px',
+                                            backfaceVisibility: 'hidden',
                                             boxShadow: '0 4px 8px 0 rgba(0,0,0, 0.2)',
                                             transform: flipped[index] ? 'rotateY(180deg)' : 'rotateY(0deg)',
                                         },
