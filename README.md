@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Flashcards
 
+## Table of Contents
+
+- [Description](#description)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [License](#license)
+
+## Description
+
+AI Flashcards is a web application built with Next.js that allows users to create and study flashcards using AI-generated content. This project leverages OpenAI's language model to generate flashcards that help users study more effectively.
+
+## Features
+
+- **AI-Powered Flashcards**: Automatically generate flashcards based on user input or predefined topics using OpenAI's API.
+- **User Authentication**: Sign up and log in securely using Clerk.
+- **Payment Integration**: Stripe integration for handling payments and subscriptions.
+- **Personalized Learning**: Save and categorize flashcards for a personalized learning experience.
+- **Responsive Design**: Fully responsive UI built with Material-UI for consistent and modern design across devices.
+
+## Technologies Used
+
+- **Frontend**: Next.js, React, Material-UI
+- **Backend**: Firebase (Firestore)
+- **Authentication**: Clerk
+- **Payment Processing**: Stripe
+- **AI Integration**: OpenAI API
+  
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ai-flashcards.git
+   cd ai-flashcards
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Set up OpenAI API:
+   - Obtain your OpenAI API key from [OpenAI](https://platform.openai.com/).
+   - Add your API key to your environment variables.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Set up Clerk and Stripe:
+   - Create a Clerk project at [Clerk Dashboard](https://dashboard.clerk.dev/).
+   - Create a Stripe account at [Stripe Dashboard](https://dashboard.stripe.com/).
+   - Add your Clerk and Stripe configuration details in the appropriate files.
 
-## Learn More
+5. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+6. Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
